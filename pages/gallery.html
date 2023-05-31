@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <title>Spurs Gallery</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Spurs Gallery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link btn btn-link"
+                data-toggle="modal"
+                data-target="#loginModal"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="login-container mt-5 mb-5">
+              <h2>Tottenham Hotspur Login</h2>
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Enter your username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h1>Spurs Gallery</h1>
+        <div class="gallery-category">
+          <button class="btn btn-primary filter-button" data-filter="all">
+            All
+          </button>
+          <button
+            class="btn btn-outline-primary filter-button"
+            data-filter="stadium"
+          >
+            Stadium
+          </button>
+          <button
+            class="btn btn-outline-primary filter-button"
+            data-filter="players"
+          >
+            Players
+          </button>
+        </div>
+
+        <!-- Search -->
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="searchInput"
+            placeholder="Search"
+          />
+        </div>
+
+        <!-- Gallery Items -->
+        <div class="row" id="gallery">
+          <!-- Gallery items will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script type="module" src="../assets/script/script.js"></script>
+  </body>
+</html>

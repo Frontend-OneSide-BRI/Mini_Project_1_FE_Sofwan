@@ -1,0 +1,118 @@
+  .navbar {
+    background-color: #001c58;
+    color: #fff;
+  }
+
+  .navbar .navbar-brand {
+    color: #fff;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  .navbar .navbar-nav .nav-link:hover {
+    color: #c5c9cd;
+  }
+  .gallery-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .gallery-item:hover .caption {
+    opacity: 1;
+  }
+
+  .gallery-category {
+    margin-bottom: 10px;
+  }
+
+@media (min-width: 480px) {
+  .gallery-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .gallery-item {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+    .gallery-item {
+      width: 20%;
+    }
+  }
+
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #132257;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #132257;
+  }
+
+  .login-container .form-group {
+    margin-bottom: 20px;
+  }
+
+  .login-container .form-group label {
+    font-weight: bold;
+    color: #132257;
+  }
+
+  .login-container .form-group input[type="text"],
+  .login-container .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .login-container .form-group button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #132257;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .login-container .form-group button[type="submit"]:hover {
+    background: #071930;
+  }
